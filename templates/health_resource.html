@@ -41,7 +41,7 @@
             </div>
 
             <div class="sidebar">
-                <div class="item" id="active">
+                <div class="item">
                     <i class='bx bxs-calendar-check'></i>
                     <a href="{{ url_for('home') }}">Daily Tracker</a>
                 </div>
@@ -49,7 +49,7 @@
                     <i class='bx bx-book-bookmark' ></i>
                     <a href="{{ url_for('journaling') }}">Journaling</a>
                 </div>
-                <div class="item">
+                <div class="item" id="active">
                     <i class='bx bxl-blogger' ></i>
                     <a href="{{ url_for('health_resource') }}">Mental Health Resources</a>
                 </div>
@@ -69,44 +69,7 @@
         </aside>
 
         <!-- Main Content Section -->
-        <main>
-            <header>
-                <h5>Hello <b>USER</b>, welcome back!</h5>
-            </header>
-
-
-            <section class="card">
-                <h2>How is your mood today?</h2>
-                <div class="emoji-container">
-                    <img src="{{ url_for('static', filename='images/terrible.jpg') }}" alt="Terrible" class="emoji" data-mood="terrible">
-                    <img src="{{ url_for('static', filename='images/bad.jpg') }}" alt="Bad" class="emoji" data-mood="bad">
-                    <img src="{{ url_for('static', filename='images/okay.jpg') }}" alt="Okay" class="emoji" data-mood="okay">
-                    <img src="{{ url_for('static', filename='images/good.jpg') }}" alt="Good" class="emoji" data-mood="good">
-                    <img src="{{ url_for('static', filename='images/excellent.jpg') }}" alt="Excellent" class="emoji" data-mood="excellent">
-                </div>
-            </section>
         
-            <section class="card">
-                <h2>How is your energy today?</h2>
-                <div class="emoji-container">
-                    <img src="{{ url_for('static', filename='images/energetic.png') }}" alt="Energetic" class="emoji" data-energy="energetic">
-                    <img src="{{ url_for('static', filename='images/tired.png') }}" alt="Tired" class="emoji" data-energy="tired">
-                    <img src="{{ url_for('static', filename='images/neutral-energy.png') }}" alt="Neutral" class="emoji" data-energy="neutral">
-                    <img src="{{ url_for('static', filename='images/exhausted.png') }}" alt="Exhausted" class="emoji" data-energy="exhausted">
-                    <img src="{{ url_for('static', filename='images/active.png') }}" alt="Active" class="emoji" data-energy="active">
-                </div>
-            </section>
-        
-            <section class="card">
-                <h2>How many hours did you sleep?</h2>
-                <select id="sleep-hours">
-                    <option value="0-3">0-3 hours</option>
-                    <option value="4-6">4-6 hours</option>
-                    <option value="7-9">7-9 hours</option>
-                    <option value="10+">10+ hours</option>
-                </select>
-            </section>
-        </main>
         
     </div>
 
